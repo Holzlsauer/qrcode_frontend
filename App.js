@@ -41,12 +41,12 @@ export default function App() {
               ...state, 
               isLogged: false,
             });
-            setState({
-              ...state,
-              resp: resposta.resp,
-              message: resposta.resp
-            })
           }
+          setState({
+            ...state,
+            resp: resposta.resp,
+            message: resposta.resp
+          });
         } 
   
         throw new Error('Não foi possível realizar o acesso');
